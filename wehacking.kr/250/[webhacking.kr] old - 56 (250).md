@@ -42,7 +42,7 @@ hi~ 는 딱히 별게 없었다.
 
 <img width="554" alt="스크린샷 2020-01-08 오전 1 24 27" src="https://user-images.githubusercontent.com/54495632/71910738-d32ced80-31b5-11ea-819c-90a26b469dd4.png">
 
-FLAG 값을 파이썬을 이용하여 구하였다. 코드는 제공하기 싫다.
+FLAG 값을 파이썬을 이용하여 구하였다.
 
 <img width="346" alt="스크린샷 2020-01-08 오전 1 24 42" src="https://user-images.githubusercontent.com/54495632/71910777-e3dd6380-31b5-11ea-92d2-00a1e67673e4.png">
 
