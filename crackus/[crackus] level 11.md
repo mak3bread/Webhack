@@ -38,7 +38,7 @@ pw의 length가 7임을 찾았다.
 
 import requests
 
-cookies={'PHPSESSID':'55u9gmc98r1hrdgmohnr0upf75'}
+cookies={'PHPSESSID':'쿠키값'}
 url="http://crackus.jeju.kr/chall11.php?id="
 
 id='admin'
