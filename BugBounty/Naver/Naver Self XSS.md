@@ -117,5 +117,5 @@ XSS 공격 구문을 작성한 후 html 설정 해제
 <img width="1083" alt="스크린샷 2020-02-16 오후 6 22 45" src="https://user-images.githubusercontent.com/54495632/74604076-d93fb380-50fd-11ea-9f65-a5acfeb646b2.png">
 
 URL로 입력값을 미리 넣고 미리보기를 실행할 수 있다면 
-reflected XSS로도 볼 수 있는 취약점이지만 불가능한 것 같고
+reflected XSS를 할 수 있는 취약점이지만 불가능한 것 같고
 self XSS로 보기에도 애매하다...
